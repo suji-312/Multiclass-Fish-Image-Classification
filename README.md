@@ -103,20 +103,20 @@ The model predicts the following categories:
 🔹 Clone the Repository
 
 git clone https://github.com/yourusername/fish-image-classification.git
-cd fish-image-classification
+- cd fish-image-classification
 🔹 Install Dependencies
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 🔹 Run the Streamlit App
 
-streamlit run streamlit_fish_app.py
+- streamlit run streamlit_fish_app.py
 
 📁 Dataset
-Images organized by species in separate folders.
+- Images organized by species in separate folders.
 
-Place dataset under data/train, data/val, data/test.
+- Place dataset under data/train, data/val, data/test.
 
-Loaded with ImageDataGenerator for efficient preprocessing.
+- Loaded with ImageDataGenerator for efficient preprocessing.
 
 🚀 Deliverables
 ✅ Trained EfficientNetB0 model (.h5).
