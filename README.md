@@ -1,85 +1,88 @@
 🐟 Multiclass Fish Image Classification
+
 📌 Overview
-This project implements multiclass fish species classification using deep learning in TensorFlow/Keras.
-We train both CNN models from scratch and transfer learning architectures, evaluate their performance, and deploy the best model via a Streamlit web application for real-time predictions.
+- This project implements multiclass fish species classification using deep learning in TensorFlow/Keras.
+- We train both CNN models from scratch and transfer learning architectures, evaluate their performance, and deploy the best model via a Streamlit web application for real-time predictions.
 
 🎯 Key Skills & Technologies
-Python
 
-TensorFlow / Keras (Deep Learning)
+- Python
 
-CNN & Transfer Learning (EfficientNet, VGG16, ResNet50, MobileNet, InceptionV3)
+- TensorFlow / Keras (Deep Learning)
 
-Data Augmentation & Preprocessing
+- CNN & Transfer Learning (EfficientNet, VGG16, ResNet50, MobileNet, InceptionV3)
 
-Model Evaluation & Visualization
+- Data Augmentation & Preprocessing
 
-Streamlit (Deployment)
+- Model Evaluation & Visualization
+
+- Streamlit (Deployment)
 
 📂 Project Structure
 
 
-── data/                               # Dataset (train, val, test folders)
-── fish_classification.ipynb           # Model training & evaluation
-── streamlit_fish_app.py                # Streamlit web app for predictions
-── efficientnet_fish_classifier_final.h5# Best trained model
-── requirements.txt                     # Python dependencies
-── README.md                            # Project documentation
+- data/                               # Dataset (train, val, test folders)
+- fish_classification.ipynb           # Model training & evaluation
+- streamlit_fish_app.py                # Streamlit web app for predictions
+- efficientnet_fish_classifier_final.h5# Best trained model
+- requirements.txt                     # Python dependencies
+- README.md                            # Project documentation
+  
 🧩 Problem Statement
-Given an input image of a fish, predict its species from multiple predefined categories.
-The goal is to:
+- Given an input image of a fish, predict its species from multiple predefined categories.
+- The goal is to:
 
-Compare multiple architectures to determine the best model.
+-> Compare multiple architectures to determine the best model.
 
-Deploy the model in a user-friendly prediction interface.
+-> Deploy the model in a user-friendly prediction interface.
 
 💼 Business Use Cases
-Fisheries Management: Automate fish species recognition.
+- Fisheries Management: Automate fish species recognition.
 
-Marine Research: Speed up marine biodiversity analysis.
+- Marine Research: Speed up marine biodiversity analysis.
 
-Food Industry: Automate sorting in seafood processing plants.
+- Food Industry: Automate sorting in seafood processing plants.
 
 🛠 Methodology
 1️⃣ Data Preprocessing
-Images loaded using ImageDataGenerator.
+- Images loaded using ImageDataGenerator.
 
-Normalized to range [0, 1].
+- Normalized to range [0, 1].
 
-Applied augmentation: rotation, zoom, flipping.
+- Applied augmentation: rotation, zoom, flipping.
 
 2️⃣ Model Training & Fine-Tuning
-CNN from scratch.
+- CNN from scratch.
 
 Transfer learning with:
 
-VGG16
+- VGG16
 
-ResNet50
+- ResNet50
 
-MobileNet
+- MobileNet
 
-InceptionV3
+- InceptionV3
 
-EfficientNetB0 (best performing).
+- EfficientNetB0 (best performing).
 
-Fine-tuned layers for improved accuracy.
+- Fine-tuned layers for improved accuracy.
 
 3️⃣ Model Evaluation
-Metrics: Accuracy, Precision, Recall, F1-score.
+- Metrics: Accuracy, Precision, Recall, F1-score.
 
-Confusion matrix visualization.
+- Confusion matrix visualization.
 
-Tracked training/validation accuracy & loss curves.
+- Tracked training/validation accuracy & loss curves.
 
 4️⃣ Deployment (Streamlit)
-Loads efficientnet_fish_classifier_final.h5.
+- Loads efficientnet_fish_classifier_final.h5.
 
-Accepts .jpg, .jpeg, .png uploads.
+- Accepts .jpg, .jpeg, .png uploads.
 
-Predicts fish species & confidence score.
+- Predicts fish species & confidence score.
 
-Displays per-class probability scores.
+- Displays per-class probability scores.
 
 📊 Classes in Model
 The model predicts the following categories:
